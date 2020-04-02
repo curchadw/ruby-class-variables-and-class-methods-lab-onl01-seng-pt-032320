@@ -5,14 +5,23 @@ class Song
   @@genres = Array.new
   @@artists = Array.new
   
+<<<<<<< HEAD
   def initialize(name, artist, genre)
+=======
+  def initalize(name, artist, genre)
+>>>>>>> acca04f483d168c79f2077c54ff7c92fa22a74bf
     @name = name
     @artist = artist 
     @genre = genre
     @@count += 1
+<<<<<<< HEAD
     @@genres << genre
     @@artists << artist
    
+=======
+    @@genres = genres 
+    !(@@genres.include?(genre))? @@genres >> genre:false
+>>>>>>> acca04f483d168c79f2077c54ff7c92fa22a74bf
     
   end
   
@@ -22,11 +31,16 @@ class Song
   
   
   def self.genres
+<<<<<<< HEAD
     @@genres.uniq
+=======
+    @@genres
+>>>>>>> acca04f483d168c79f2077c54ff7c92fa22a74bf
   end
   
   
   
+<<<<<<< HEAD
   def self.artists
     @@artists.uniq
   end
@@ -53,6 +67,8 @@ class Song
   
   
   
+=======
+>>>>>>> acca04f483d168c79f2077c54ff7c92fa22a74bf
   
   
   
